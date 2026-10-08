@@ -4,12 +4,26 @@ function ProjectCard({ project }) {
     return (
         <article className="project-card">
 
-            <div className="project-image">
+            
+        <div className="project-image">
+            {project.inDevelopment ? (
+                <div className="project-placeholder">
+                    <span className="development-icon">⚙</span>
+
+                    <h4>Em desenvolvimento</h4>
+
+                    <p>
+                        Estou trabalhando neste projeto.
+                        Em breve, mais novidades.
+                    </p>
+                </div>
+            ) : (
                 <img
                     src={project.image}
                     alt={`Preview do projeto ${project.title}`}
                 />
-            </div>
+            )}
+        </div>
 
             <div className="project-content">
 

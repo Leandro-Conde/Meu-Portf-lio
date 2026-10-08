@@ -1,16 +1,71 @@
 import "../styles/technologies.css";
 
-const technologies = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Python",
-    "Supabase",
-    "Git",
-    "GitHub",
-    "Inteligência Artificial",
-    "Agentes de IA",
+const technologyGroups = [
+    {
+        title: "Front-end",
+        technologies: [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Tailwind CSS",
+            "Vite",
+            "Recharts",
+        ],
+    },
+
+    {
+        title: "Back-end & APIs",
+        technologies: [
+            "Python",
+            "FastAPI",
+            "APIs REST",
+        ],
+    },
+
+    {
+        title: "Dados",
+        technologies: [
+            "SQL",
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Supabase",
+        ],
+    },
+
+    {
+        title: "Desenvolvimento",
+        technologies: [
+            "Git",
+            "GitHub",
+            "Postman",
+            "Testes",
+            "Integração de Sistemas",
+            "Clean Code",
+            "POO",
+        ],
+    },
+
+    {
+        title: "Inteligência Artificial",
+        technologies: [
+            "Inteligência Artificial",
+            "Agentes de IA",
+        ],
+    },
+
+    {
+        title: "Outros",
+        technologies: [
+            "APIs",
+            "Arquitetura de Software",
+            "Lógica de Programação",
+            "Revisão de Código",
+            "Desenvolvimento Web",
+        ],
+    },
 ];
 
 function Technologies() {
@@ -24,23 +79,41 @@ function Technologies() {
                 </p>
 
                 <h2>
-                    Ferramentas que utilizo
+                    Tecnologias e conhecimentos
                 </h2>
 
                 <p>
-                    Tecnologias que fazem parte dos meus estudos e projetos.
+                    Tecnologias, ferramentas e conhecimentos que utilizo
+                    no desenvolvimento de aplicações e soluções de software.
                 </p>
 
             </div>
 
-            <div className="technologies-grid">
+            <div className="technology-groups">
 
-                {technologies.map((technology) => (
+                {technologyGroups.map((group) => (
                     <div
-                        className="technology-card"
-                        key={technology}
+                        className="technology-group"
+                        key={group.title}
                     >
-                        {technology}
+
+                        <h3>
+                            {group.title}
+                        </h3>
+
+                        <div className="technologies-grid">
+
+                            {group.technologies.map((technology) => (
+                                <div
+                                    className="technology-card"
+                                    key={technology}
+                                >
+                                    {technology}
+                                </div>
+                            ))}
+
+                        </div>
+
                     </div>
                 ))}
 

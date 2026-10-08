@@ -5,6 +5,8 @@ import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Technologies from "./sections/Technologies";
 
+import Footer from "./components/Footer";
+
 import "./styles/global.css";
 import "./styles/contact.css";
 
@@ -102,6 +104,9 @@ function App() {
                 </section>
 
             </main>
+
+            {/* Footer */}
+            <Footer />
 
         </div>
     );

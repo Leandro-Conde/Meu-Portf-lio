@@ -27,3 +27,15 @@
 
     text-align: center;
 }
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 90px 6%;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+}

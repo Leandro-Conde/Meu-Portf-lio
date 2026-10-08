@@ -5,7 +5,7 @@ const projects = [
         description:
             "Aplicação para organização e acompanhamento financeiro, com dashboard, transações e visualização de dados.",
         technologies: ["React", "JavaScript", "Supabase"],
-        image: "/projects/atlas-finance.png",
+        image: `${import.meta.env.BASE_URL}projects/atlas-finance.png`,
         github: "#",
         demo: "#",
     },
@@ -16,7 +16,7 @@ const projects = [
         description:
             "Aplicação para gerenciamento de tarefas com foco em organização, produtividade e experiência de uso.",
         technologies: ["React", "JavaScript", "CSS"],
-        image: "/projects/task-manager.png",
+        image: `${import.meta.env.BASE_URL}projects/task-manager.png`,
         github: "#",
         demo: "#",
     },
@@ -27,7 +27,7 @@ const projects = [
         description:
             "Evolução do gerenciador de tarefas com melhorias de interface, funcionalidades e estrutura do projeto.",
         technologies: ["React", "JavaScript", "CSS"],
-        image: "/projects/task-manager-v2.png",
+        image: `${import.meta.env.BASE_URL}projects/task-manager-v2.png`,
         github: "#",
         demo: "#",
     },
@@ -38,9 +38,10 @@ const projects = [
         description:
             "Protótipo experimental de um agente baseado em inteligência artificial.",
         technologies: ["Python", "IA"],
-        image: "/projects/ai-agent.png",
+        image: null,
         github: "#",
         demo: "#",
+        inDevelopment: true,
     },
 
     {
@@ -49,7 +50,7 @@ const projects = [
         description:
             "Projeto em desenvolvimento voltado para uma experiência de reprodução e interação com conteúdo.",
         technologies: ["React", "JavaScript"],
-        image: "/projects/pixel-player.png",
+        image: `${import.meta.env.BASE_URL}projects/pixel-player.png`,
         github: "#",
         demo: "#",
     },
