@@ -1,0 +1,29 @@
+.about-section {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 120px 8%;
+}
+
+.about-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+.about-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
