@@ -1,59 +1,58 @@
+
 const projects = [
     {
-        id: 1,
-        title: "Atlas Finance",
-        description:
-            "Aplicação para organização e acompanhamento financeiro, com dashboard, transações e visualização de dados.",
-        technologies: ["React", "JavaScript", "Supabase"],
-        image: `${import.meta.env.BASE_URL}projects/atlas-finance.png`,
-        github: "#",
-        demo: "#",
+      id: 1,
+      title: "Atlas Finance",
+      description:
+        "Aplicação de organização financeira com dashboard, transações e visualização de dados.",
+      technologies: ["React", "JavaScript", "CSS"],
+      image: `${import.meta.env.BASE_URL}projects/atlas-finance.png`,
+      demoUrl: "https://leandro-conde.github.io/finances/",
+      status: "Concluído",
     },
-
     {
-        id: 2,
-        title: "Gerenciador de Tarefas",
-        description:
-            "Aplicação para gerenciamento de tarefas com foco em organização, produtividade e experiência de uso.",
-        technologies: ["React", "JavaScript", "CSS"],
-        image: `${import.meta.env.BASE_URL}projects/task-manager.png`,
-        github: "#",
-        demo: "#",
+      id: 2,
+      title: "Gerenciador de Tarefas",
+      description:
+        "Primeira versão de uma aplicação para organização e gerenciamento de tarefas.",
+      technologies: ["React", "JavaScript", "CSS"],
+      image: `${import.meta.env.BASE_URL}projects/task-manager.png`,
+      demoUrl: "https://leandro-conde.github.io/Gerenciador-Demo/",
+      status: "Concluído",
+      version: "V1",
     },
-
     {
-        id: 3,
-        title: "Gerenciador de Tarefas V2",
-        description:
-            "Evolução do gerenciador de tarefas com melhorias de interface, funcionalidades e estrutura do projeto.",
-        technologies: ["React", "JavaScript", "CSS"],
-        image: `${import.meta.env.BASE_URL}projects/task-manager-v2.png`,
-        github: "#",
-        demo: "#",
+      id: 3,
+      title: "Gerenciador de Tarefas 2.0",
+      description:
+        "Evolução do gerenciador de tarefas, apresentando uma nova versão do projeto.",
+      technologies: ["React", "JavaScript", "CSS"],
+      image: `${import.meta.env.BASE_URL}projects/task-manager-v2.png`,
+      demoUrl:
+        "https://leandro-conde.github.io/Gerenciador-de-Tarefas-2.0/",
+      status: "Concluído",
+      version: "V2",
     },
-
     {
-        id: 4,
-        title: "Agente de IA",
-        description:
-            "Protótipo experimental de um agente baseado em inteligência artificial.",
-        technologies: ["Python", "IA"],
-        image: null,
-        github: "#",
-        demo: "#",
-        inDevelopment: true,
+      id: 4,
+      title: "Agente de IA",
+      description:
+        "Projeto de inteligência artificial em fase de protótipo.",
+      technologies: ["Em desenvolvimento"],
+      image: `${import.meta.env.BASE_URL}projects/ai-agent.png`,
+      demoUrl: "",
+      status: "Em desenvolvimento",
     },
-
     {
-        id: 5,
-        title: "Pixel Player",
-        description:
-            "Projeto em desenvolvimento voltado para uma experiência de reprodução e interação com conteúdo.",
-        technologies: ["React", "JavaScript"],
-        image: `${import.meta.env.BASE_URL}projects/pixel-player.png`,
-        github: "#",
-        demo: "#",
+      id: 5,
+      title: "Pixel Player",
+      description:
+        "Projeto em desenvolvimento. Uma nova experiência será disponibilizada em breve.",
+      technologies: ["Em desenvolvimento"],
+      image: `${import.meta.env.BASE_URL}projects/pixel-player.png`,
+      demoUrl: "",
+      status: "Disponibilizado em breve",
     },
-];
-
-export default projects;
+  ];
+  
+  export default projects;
